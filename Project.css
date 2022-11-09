@@ -1,0 +1,356 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.toplabel{
+    border: 2px solid black;
+    background-color:rgb(175,44,44);
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
+.topnav{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    /* color: white; */
+}
+.topnav>i,h4,#topa
+{
+    margin: 2px 10px 0px 10px;
+    color: white;
+}
+
+.middlenav{
+    border: 2px solid yellow;
+    background-color: rgb(247,246,242);
+    height: 30px;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
+.middlenav>a{
+    color: rgb(68, 180, 190);
+    padding-right: 50px;
+    
+}
+.serachnav{
+    display: flex;
+    border: 2px solid red;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+.serachnav>img{
+    height: 100%;
+}
+.searchandCart{
+    margin-right: 100px;
+    display: flex;
+    
+}
+.searchandCart>#Searchbar{
+     /* height: 40px; */
+     /* width: 300px; */
+     padding-left: 20px;
+     padding-top: 30px;
+}
+.searchandCart>button{
+    width: 40px;
+    font-size: 25px;
+    background: transparent;
+    color:rgb(68, 180, 190) ;
+    border: none;
+    margin-left: 20px;
+}
+.searchbardiv{
+    border: 2px solid rgb(68, 180, 190);
+    height: 40px; 
+    width: 300px; 
+   align-items: center;
+    display: flex;
+    border-radius: 5px;
+    
+    /* display: flex; */
+}
+.searchbardiv>i{
+    margin-left: 100px;
+    width: 50px;
+    color: rgb(68, 180, 190);
+    /* display: flex; */
+}
+#Searchbar{
+     height: 25px;
+}
+.searchbardiv>input{
+    
+    height: 100%;
+    padding-left: 10px; 
+    width: 90%;
+    border: none;
+    outline: none;
+    
+}
+.searchbardiv>i{
+    width: 20px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.navbar{
+    border: 2px solid blue;
+    /* height: 80px; */
+    background-color: white;
+
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 15px 15px; 
+}
+.navbar li a{
+
+    color: black;
+    font-size: 18px;
+     text-decoration: none;
+} 
+
+/* Body design */
+
+.topsection{
+display: flex;
+justify-content: center;
+
+}
+.topsection>div{
+border-top: 2px solid grey;
+border-bottom: 2px solid grey;
+background-color: rgb(243,239,236);
+margin: 50px 50px;
+height: 50px;
+width: 250px;
+padding-top: 30px;
+text-align: center;
+}
+
+.topcontainer1{
+display: grid;
+width: 93%;
+margin: auto;
+grid-template-columns: repeat(2,1fr);
+gap: 3px 3px;
+}
+.topcontainer2{
+border: 2px solid blue;
+display: flex;
+width: 90%;
+margin: auto;
+justify-content: center;
+margin-bottom: 20px;
+/* justify-content: space-around; */
+}
+
+.topcontainer2>div{
+margin: 10px 60px 10px 60px;
+margin: auto;
+border: 2px solid black;
+width: 420px;
+height: 550px;
+}
+.topcontainer2>div>img{
+width: 100%;
+height: 100%;
+}
+
+.topcontainer1>div>img:nth-child(1){
+border: 2px solid red;
+width: 90%;
+margin-left: 35px;
+grid-area: one;
+}
+.topcontainer1>div>img:nth-child(2){
+border: 2px solid red;
+width: 90%;
+grid-area: two;
+}
+.topcontainer2>div>img:nth-child(1){
+/* border: 2px solid red; */
+width: 100%;
+grid-area: three;
+}
+.topcontainer2>div>img:nth-child(2){
+border: 2px solid red;
+width: 100%;
+grid-area: four;
+}
+.topcontainer2>div>img:nth-child(3){
+border: 2px solid red;
+width: 100%;
+grid-area: five;
+}
+
+.middlecontainer>div{
+margin: auto;
+width: 90%;
+height: 600px;
+margin-bottom: 20px;
+}
+.middlecontainer>div>img{
+width: 100%;
+height: 100%;
+}
+.middlecontainer2{
+border: 2px solid red;
+display: flex;
+width: 90%;
+margin: auto;
+justify-content: center;
+}
+.middlecontainer2>div{
+margin: 10px 10px;
+width: 550px;
+height: 450px;
+}
+.middlecontainer2>div>img{
+width: 100%;
+height: 100%;
+}
+
+.outer{
+position: relative;
+height: 100%;
+width: 100%;
+text-align: center;
+}
+.outer img,.inner img{
+width: 100%;
+height: 90%;
+}
+.inner{
+position: absolute;
+top: 0;
+left: 0;
+display:none ;
+border: 2px solid red;
+width: 100%;
+height: 100%;
+}
+.outer:hover .inner{
+display: block;
+}
+.section{
+display: grid;
+width: 90%;
+margin: auto;
+grid-template-columns: repeat(4,1fr);
+grid-column-gap: 10px;
+border: 10px solid red ;
+}
+.bottomcontainer3{
+display: flex;
+width: 90%;
+height: auto;
+border-top: 2px solid grey;
+border-bottom: 2px solid grey;
+margin: auto;
+padding-top: 30px;
+padding-bottom: 30px;
+/* border: 2px solid green; */
+/* border: 10px solid red; */
+}
+.bottomcontainer3>div{
+    width: 400px;
+    height: auto;
+    margin: auto;
+    border: 2px solid black;
+    padding-bottom: 20px;
+}
+.bottomcontainer3>div>img{
+    width: 100%;
+    height: 90%;
+}
+.bottomcontainer3>div>h2,p{
+    padding: 10px 0px;
+}
+.bottomcontainer3>div>a{
+    padding-bottom: 10px;
+}
+.aboutUs{
+    padding-top: 20px;
+   padding-bottom: 20px;
+    width: 90%;
+    margin: auto;
+}
+.footertop{
+    display: grid;
+    grid-template-areas: 
+    "one two"
+    "third third";
+    gap: 10px 10px;
+    /* align-items: center; */
+}
+.footertop>div:nth-child(1){
+   grid-area: one;
+   border: 2px solid black;
+   padding-left: 120px;
+   width: 560px;
+   margin-left: 50px;
+}
+.footertop>div:nth-child(2){
+   grid-area: two;
+   width: 650px;
+   /* height: 70px; */
+   /* padding-top: 10px; */
+   padding-left: 80px;
+   border: 2px solid black;
+}
+.footertop>div:nth-child(3){
+   grid-area: third;
+   border: 2px solid black;
+}
+.searchboxdiv>input{
+    width: 350px;
+    height: 30px;
+}
+.searchboxdiv>h5{
+  font-size: 20px;
+}
+.searchboxdiv>button{
+    width: 120px;
+    height: 32px;
+    margin-left: 10px;
+    background-color: rgb(75,86,102);
+    color: white;
+}
+.fp{
+    padding-left: 70px;
+}
+.bottom{
+    display: flex;
+    border: 2px solid blue;
+    justify-content: center;
+}
+.bottom>div{
+    border: 2px solid red;
+    /* margin: auto; */
+    margin: 10px 30px;
+}
+.connect{
+    padding-top: 20px;
+}
+.bottom2{
+    text-align: center;
+}
+.bottom2>a{
+    padding: 5px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.bottom2>img{
+    padding-top: 30px;
+}
+
